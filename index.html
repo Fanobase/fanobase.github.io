@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fanobase</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300&display=swap" rel="stylesheet" />
+    <style>
+      html, body { height: 100%; margin: 0; }
+      body {
+        display: flex; flex-direction: column;
+        align-items: center; justify-content: center;
+        min-height: 100vh; gap: 1.4rem;
+        background: #f7f9fb; color: #333;
+        font-family: "Poppins", Georgia, serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .mark { width: min(46vw, 260px); height: auto; }
+      .wordmark { font-variant: small-caps; letter-spacing: 0.06em; font-size: 1.5rem; color: #444; }
+      .tagline { font-style: italic; font-weight: 300; font-size: 1rem; color: #7a8896; max-width: 35rem;
+                 text-align: center; padding: 0 1rem; }
+      .whisper { font-size: 0.8rem; color: #aeb8c2; letter-spacing: 0.04em; opacity: 0.9; }
+    </style>
+  </head>
+  <body>
+    <!-- The F4f mark, full size (same as the fano-fourfolds favicon). -->
+    <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fano fourfolds">
+      <rect width="100" height="100" rx="14" fill="#cfe7fb" />
+      <text font-family="Poppins, Georgia, serif" font-variant="small-caps" font-weight="600" text-anchor="middle">
+        <tspan x="18" y="74" font-size="54" fill="#c0392b">F</tspan>
+        <tspan x="52" y="74" font-size="54" fill="#6c757d">4</tspan>
+        <tspan x="84" y="74" font-size="54" fill="#27ae60">f</tspan>
+      </text>
+    </svg>
+
+    <div class="wordmark">Fanobase</div>
+    <p class="tagline">There are finitely many deformation families of Fano fourfolds. <br>We're putting together a list of them.</p>
+    <p class="whisper">coming soon</p>
+  </body>
+</html>
