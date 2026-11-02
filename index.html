@@ -15,11 +15,12 @@
       plausible.init()
     </script>
     <style>
-      html, body { height: 100%; margin: 0; }
+      html, body { min-height: 100%; margin: 0; }
       body {
         display: flex; flex-direction: column;
-        align-items: center; justify-content: center;
-        min-height: 100vh; gap: 1.4rem;
+        align-items: center;
+        box-sizing: border-box; min-height: 100vh; gap: 1.4rem;
+        padding: clamp(2rem, 7vh, 4rem) 1rem 3rem;
         background: #f7f9fb; color: #333;
         font-family: "Poppins", Georgia, serif;
         -webkit-font-smoothing: antialiased;
@@ -27,8 +28,13 @@
       .mark { width: min(46vw, 260px); height: auto; }
       .wordmark { font-variant: small-caps; letter-spacing: 0.06em; font-size: 1.5rem; color: #444; }
       .tagline { font-style: italic; font-weight: 300; font-size: 1rem; color: #7a8896; max-width: 35rem;
-                 text-align: center; padding: 0 1rem; }
-      .whisper { font-size: 0.8rem; color: #aeb8c2; letter-spacing: 0.04em; opacity: 0.9; }
+                 text-align: center; margin: 0; }
+      .resources { display: grid; gap: 1.5rem; width: 100%; max-width: 35rem; margin-top: 0.4rem;
+                   padding-top: 1.6rem; border-top: 1px solid #dce4eb; text-align: center; }
+      .resources a { color: #376684; text-underline-offset: 0.2em; }
+      .resources a:hover { color: #23445a; }
+      .resources a:focus-visible { outline: 2px solid #376684; outline-offset: 4px; }
+      .resources p { margin: 0.4rem 0 0; font-size: 0.9rem; font-weight: 300; color: #677582; }
     </style>
   </head>
   <body>
@@ -44,6 +50,15 @@
 
     <div class="wordmark">Fanobase</div>
     <p class="tagline">There are finitely many deformation families of Fano fourfolds. <br>We're putting together a list of them.</p>
-    <p class="whisper">coming soon</p>
+    <nav class="resources" aria-label="Explore Fanobase">
+      <div>
+        <a href="https://type-a.fanobase.net/">Fano fourfolds of type A</a>
+        <p>Zero loci on products of Grassmannians and flag varieties.</p>
+      </div>
+      <div>
+        <a href="https://blog.fanobase.net/">Fanobase blog</a>
+        <p>News and updates from the project.</p>
+      </div>
+    </nav>
   </body>
 </html>
